@@ -27,13 +27,19 @@
     </properties>
 
     <repositories>
+        <!-- Commenting as this repo is not available any more as on Feb-2025
         <repository>
             <id>motech-repo</id>
             <name>MoTeCH Maven Repository</name>
             <url>http://nexus.motechproject.org/content/repositories/public</url>
+        </repository> -->
+        <repository>
+            <id>redhat repo</id>
+            <url>https://maven.repository.redhat.com/ga/</url>
         </repository>
     </repositories>
 
+    <!--  Commenting as this repo is not available any more as on Feb-2025
     <pluginRepositories>
         <pluginRepository>
             <id>motech-repo</id>
@@ -43,8 +49,9 @@
                 <enabled>true</enabled>
             </snapshots>
         </pluginRepository>
-    </pluginRepositories>
+    </pluginRepositories> -->
 
+    <!--  Commenting as this repo is not available any more as on Feb-2025
     <distributionManagement>
         <repository>
             <id>motech.nexus</id>
@@ -58,7 +65,7 @@
             <url>http://nexus.motechproject.org/content/repositories/snapshots</url>
             <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
-    </distributionManagement>
+    </distributionManagement> -->
 
     <dependencies>
         <dependency>
@@ -143,21 +150,22 @@
         <module>motech-cmslite-api</module>
         <module>motech-scheduletracking-api</module>
         <module>motech-message-campaign</module>
-        <module>motech-mobileforms-api</module>
+        <!-- Temporary comment to make first successful build-->
+        <!-- <module>motech-mobileforms-api</module> -->
         <module>motech-alerts-api</module>
         <module>motech-ivr-asterisk</module>
-        <module>motech-ivr-kookoo</module>
+        <!-- <module>motech-ivr-kookoo</module> -->
         <module>motech-ivr-voxeo</module>
         <module>motech-ivr-verboice</module>
         <module>motech-demo</module>
         <module>motech-mrs-api</module>
-        <module>motech-openmrs-api</module>
-        <module>motech-openmrs-omod</module>
+        <!-- <module>motech-openmrs-api</module> -->
+        <!-- <module>motech-openmrs-omod</module> -->
         <module>motech-sms-api</module>
         <module>motech-sms-http</module>
-        <module>motech-sms-smpp</module>
+        <!-- <module>motech-sms-smpp</module> -->
         <module>motech-testing-utils</module>
-        <module>motech-platform-common</module>
+        <!-- <module>motech-platform-common</module> -->
         <module>motech-scheduler</module>
         <module>motech-rpm</module>
         <module>motech-rules-api</module>
